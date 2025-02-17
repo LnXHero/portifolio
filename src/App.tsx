@@ -219,23 +219,26 @@ function App() {
               {
                 id: 1,
                 name: 'HideAndSeek_Plugin',
-                description: 'Descrição do Projeto 1.',
+                description: 'Esconde-esconde no Minecraft! Feito por um dev apaixonado por diversão e criatividade.',
                 tags: ['Java'],
-                image: hsprojeto, // Substitua por uma imagem específica
+                image: hsprojeto,
+                githubLink: 'https://github.com/LnXHero/hsPlugin',
               },
               {
                 id: 2,
                 name: 'Portifólio',
-                description: 'Descrição do Projeto 2.',
-                tags: ['React', 'Tailwind', "JavaScript", 'TypeScript', "Vite"],
-                image:  portimg, // Substitua por uma imagem específica
+                description: 'Desenvolvedor transformando ideias em realidade. Cada linha de código é escrita com dedicação, buscando sempre inovar.',
+                tags: ['React', 'Tailwind', 'JavaScript', 'TypeScript', 'Vite'],
+                image: portimg,
+                githubLink: 'https://github.com/LnXHero/portifolio',
               },
               {
                 id: 3,
                 name: 'Fishing_Plugin',
-                description: 'Descrição do Projeto 3.',
+                description: 'Pesque peixes raros e itens especiais! Desenvolvido por um dev que adora uma boa pescaria.',
                 tags: ['Java'],
-                image: fishprojeto, // Substitua por uma imagem específica
+                image: fishprojeto,
+                githubLink: 'https://github.com/LnXHero/fishPlugin',
               },
             ].map((project) => (
               <div
@@ -260,21 +263,21 @@ function App() {
                   </div>
                   <div className="flex justify-between items-center">
                     <a
-                      href="#"
+                      href={project.githubLink}
                       className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Github className="inline-block" size={24} />
                     </a>
-                    <a
+                    {/* <a
                       href="#"
                       className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Ver demo
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -333,17 +336,17 @@ function App() {
             <div>
               <h3 className="text-xl font-bold mb-4">Contato</h3>
               <div className="space-y-2">
-                <a href="#" className="flex items-center hover:text-blue-400">
+                <a href="https://wa.me/19971555423" className="flex items-center hover:text-blue-400">
                   <Phone className="mr-2" size={20} />
                   WhatsApp
                 </a>
-                <a href="#" className="flex items-center hover:text-blue-400">
+                <a href="https://discord.gg/d4zTMHnwQH" className="flex items-center hover:text-blue-400">
                   <MessageCircle className="mr-2" size={20} />
                   Discord
                 </a>
                 <a href="#" className="flex items-center hover:text-blue-400">
                   <Mail className="mr-2" size={20} />
-                  Email
+                  guilherme@praweb.com.br
                 </a>
               </div>
             </div>
